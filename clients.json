@@ -1,0 +1,34 @@
+{
+  "clients": [
+    {
+      "id": "1",
+      "img": "pics/clients/planet.png",
+      "name": "planet"
+    },
+    {
+      "id": "2",
+      "img": "pics/clients/ayafashion.png",
+      "name": "ayafashion"
+    },
+    {
+      "id": "3",
+      "img": "pics/clients/taks.png",
+      "name": "taks"
+    },
+    {
+      "id": "4",
+      "img": "pics/clients/darengineers.png",
+      "name": "darengineers"
+    },
+    {
+      "id": "5",
+      "img": "pics/clients/bukhmaseen.png",
+      "name": "bukhmaseen"
+    },
+    {
+      "id": "6",
+      "img": "pics/clients/darbasma.png",
+      "name": "darbasma"
+    }
+  ]
+}

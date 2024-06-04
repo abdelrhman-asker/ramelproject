@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/pics/Logo.png" type="image/x-icon" />
+    <title>Ramel</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/0f3ea74646.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="closing()">
+    <div id="main-div" class="main-div">
+      <div class="animate__animated animate__fadeInDown img-div">
+        <img src="./pics/Logo.png" alt="Logo" />
+        <div id="loader" class="loader">
+          <div class="Into-Load"></div>
+        
+        </div>
+      </div>
+      <div class="fading-imgs">
+        <div class="animate__animated animate__fadeInRightBig my-element1">
+          <img src="./pics/Path 226.png" alt="نسوي" />
+        </div>
+        <div
+          class="animate__animated animate__fadeInUp animate__delay-1s my-element2"
+        >
+          <img src="./pics/Rectangle 78.png" alt="من الحبه" />
+        </div>
+        <div
+          class="animate__animated animate__fadeInLeftBig animate__delay-1s my-element3"
+        >
+          <img src="./pics/Rectangle 79.png" alt="قبة" />
+        </div>
+      </div>
+    </div>
+<main class="Main-Section" id="Main-Section">
+
+    <div class="main-home" id="main-home">
+      <nav id="NavContent" class="Main-Nav">
+        <div class="NavTopLeft" dir="rtl">
+          <div class="searchAText">
+            <div class="ourWorks">المدونة | أعمالنا</div>
+            <div class="InputWithIcon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" id="search" placeholder="بحث..." dir="rtl" />
+            </div>
+          </div>
+          <div onclick="openingSideBar()" class="sideBar">
+            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+        <div class="MidLogo">
+          <img src="/pics/Logo.png" alt="Logo" />
+        </div>
+        <div dir="rtl" class="SocialLinks">
+          <span> تواصل معنا | </span>
+          <div class="links">
+            <a href="#">
+              <i class="fa-brands fa-tiktok"> </i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-snapchat"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+
+
+
+      
+      </nav>
+<!-- side bar navigation -->
+        <div id="sidenav" class="sidenav" style="z-index: 2">
+          <button class="dropdown-btn">
+            <i id="ArrowDU0" class="fa fa-angle-down "></i>
+            تصميم الويب والتطبيقات
+          </button>
+          <div class="dropdown-cont dropdown-container1">
+            <a href="#">تصميم المواقع الألكترونية</a>
+            <a href="#">تصميم وبرمجة تطبيقات الجوال</a>
+          </div>
+          <button class="dropdown-btn">
+            <i id="ArrowDU1" class="fa fa-angle-down"></i>
+            التسويق الالكتروني
+          </button>
+          <div class="dropdown-cont dropdown-container2">
+            <a href="#">إضافات جوجل</a>
+            <a href="#">إعلانات شركة جوجل</a>
+            <a href="#">تحسين محرك البحث SEO</a>
+            <a href="#">إدارة محتوى مواقع التواصل الاجتماعي</a>
+          </div>
+          <button class="dropdown-btn">
+            <i id="ArrowDU2" class="fa fa-angle-down"></i>
+            تطوير هويات الشركات
+          </button>
+          <div class="dropdown-cont dropdown-container3">
+            <a href="#">تصميم شعار احترافي</a>
+            <a href="#">تصميم عبوات التغليف </a>
+            <a href="#">
+              المطبوعات الورقية
+            </a>
+          </div>
+          <button class="dropdown-btn">
+            <i id="ArrowDU3" class="fa fa-angle-down"></i>
+            اللوحات الإعلانية
+          </button>
+          <div class="dropdown-cont dropdown-container4">
+            <a href="#">لوحات البنر </a>
+            <a href="#">لوحات الفلكس </a>
+            <a href="#">لوحات الكانفاس </a>
+            <a href="#">اللوحات الإرشادية </a>
+            <a href="#">لوحات حروف بارزة </a>
+            <a href="#">تركيب وجهات كلادينج </a>
+            <a href="#">طباعة وتركيب استيكرات </a>
+          </div>
+          <a href="#">اللوحات الدعائية</a>
+          <a href="#">تنظيم المعارض وحفلات التدشين </a>
+          <a href="#"> أعمالنا  </a>
+        </div>
+
+
+
+      </div>
+
+
+      <!--Main Content -->
+      <div class="Main-Content" id="Main-Content">
+        <div class="MainSlogan">
+          <div>
+            <img src="pics/Group 1.png" alt="" srcset="">
+          </div>
+          <h4>
+            نسوي من الحبة قبة
+          </h4>
+        </div>
+        <div   class="Main-Imgs">
+          <div >
+            <div  class="FImgGreen">
+
+              <img src="pics/green.png" alt="GreenPic" >
+              <h4>
+                تصميم الويب والتطبيقات 
+              </h4>
+            </div>
+            <div class='OpenOnHover' id="OpenOnHover">
+              <img src="pics/greenhover.png" alt="GreenPic">
+              <div class='LinksOnhoverLDiv'>
+                <a class='LinksOnhoverLinks'  href="#">تصميم المواقع الإلكترونية </a> 
+                <a class='LinksOnhoverLinks'  href="#"> برمجة وتصميم تطبيقات الجوال </a> 
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+          <div class="FImgGreen">
+            <img src="pics/yellow.png" alt="yellowPic" >
+            <h4>
+             التسويق الإلكتروني
+            </h4>
+          </div>
+            <div class='OpenOnHover'>
+              <img src="pics/yellowhover.png" alt="yellowPic">
+              <div class='LinksOnhoverLDiv' style="top: 40%;">
+              <a class='LinksOnhoverLinks'  href="#">إعلانات جوجل </a> 
+              <a class='LinksOnhoverLinks'  href="#">إعلانات شبكة جوجل </a> 
+              <a class='LinksOnhoverLinks'  href="#"> تحسين محرك البحث SEO </a> 
+              <a class='LinksOnhoverLinks'  href="#"> إدارة محتوى مواقع التواصل الاجتماعي </a> 
+              </div>
+              </div>
+          </div>
+
+
+          <div>
+            <div class="FImgGreen">
+              <img src="pics/blue.png" alt="bluePic" >
+              <h4>
+                تطوير هويات الشركات              
+               </h4>
+            </div>
+            <div class='OpenOnHover'>
+              <img src="pics/bluehover.png" alt="bluehover" height="300px" width="180px" >
+              <div class='LinksOnhoverLDiv'  style="left: 9%;">
+              <a class='LinksOnhoverLinks'  href="#">تصميم شعار احترافي </a> 
+              <a class='LinksOnhoverLinks'  href="#">تصميم عبوات التغليف </a> 
+              <a class='LinksOnhoverLinks'  href="#"> المطبوعات الورقية </a> 
+              </div>
+              </div>
+          </div>
+
+
+          <div>
+            <div class="FImgGreen">
+              <img src="pics/green.png" alt="GreenPic" >
+              <h4>
+                اللوحات الإعلانية 
+              </h4>
+            </div>
+            <div class='OpenOnHover' >
+              <img src="pics/greenhover.png" alt="greenhover" height="400px" width="180px">
+              <div class='LinksOnhoverLDiv' style="left: 9%; top: 35%;">
+              <a class='LinksOnhoverLinks'  href="#">لوحات بنر </a> 
+              <a class='LinksOnhoverLinks'  href="#">لوحات الفلكس</a> 
+              <a class='LinksOnhoverLinks'  href="#"> لوحات الكانفاس</a> 
+              <a class='LinksOnhoverLinks'  href="#"> اللوحات الإرشادية </a> 
+              <a class='LinksOnhoverLinks'  href="#"> لوحات حروف بارزة </a> 
+              <a class='LinksOnhoverLinks'  href="#"> تركيب وجهات كلادينج</a> 
+              <a class='LinksOnhoverLinks'  href="#"> استيكرات </a> 
+              </div>
+              </div>
+          </div>
+
+          <div>
+            <div class="FImgGreen">
+              <a href="#">
+                <img src="pics/yellow.png" alt="yellowPic" >
+                <h4>
+                  الوسائل الدعائية 
+                </h4>
+              </a>
+            </div>
+          </div>
+        
+          <div>
+            <div class="FImgGreen">
+              <a href="#">
+                <img src="pics/blue.png" alt="bluePic" >
+                <h4>
+                  تنظيم معارض وحفلات تدشين 
+                </h4>
+              </a>
+            </div>
+          </div>
+         
+          
+        </div>
+      
+
+        <div class="Ourvision">
+          <div>
+            <h4>
+              رؤيتنا
+            </h4>
+            <h6>
+              شريك ناجح لحلول إبداعية
+            </h6>
+          </div>
+          <div>
+            <img src="./pics/robot.png" alt="robot" >
+          </div>
+        </div>
+
+<!-- clients logo Start -->
+        <div class="ourClientsMainDiv">
+          <hr style="color: #ffffff;">
+          <div>
+            <h3 >
+              عـــــمــــلا ئــــنـــا
+            </h3>
+            <div class="MainClients" id="MainClients">
+            
+            </div>
+            </div>
+        </div>
+<!-- clients logo End -->
+
+<div class="WhoWeAre">
+
+  <div class="WhoWeAreRight">
+    <h3>
+      مـــن نــحــن  ؟
+    </h3>
+    <h4>
+      فريق من المبدعين لديه أفكار وحلول تسويقية مبتكرة ونظرة شاملة وهادفة في مجال التسويق والدعاية والاعلان 
+    </h4>
+    <div class="WhoWeAreRightLink">
+
+      <i class="fa-brands fa-whatsapp"></i>
+      <a href='https://wa.me/966552580070' target="_blank">
+        اضغط هنا للتواصل واتساب 
+      </a>
+      </div>
+  </div>
+</div>
+
+      </div>
+      <!-- ending home content -->
+
+
+
+
+
+    <!-- closing side bar -->
+        <div
+          onclick="closing()"
+          style="
+            position: absolute;
+            top: 10vh;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+            background-color: transparent;
+          "
+          id="ClosingAll"
+        ></div>
+
+
+
+  <!-- all footer content -->
+
+  <footer class="BigFooter">
+    <div class="WhiteLine"></div>
+    <div>
+      <div dir="rtl" class="Main-Nav SocialLinksDiv ">
+        <span> تواصل معنا  </span>
+        <div class="links SocialLinks">
+          <a href='https://www.tiktok.com/@ramel_ag?_t=8VNkBgXR6oQ&_r=1' target="_blank">
+            <i class="fa-brands fa-tiktok"> </i>
+          </a>
+          <a href='https://www.snapchat.com/add/ag_ramel'target="_blank">
+            <i class="fa-brands fa-snapchat"></i>
+          </a>
+          <a href='https://www.instagram.com/ramel_ag/' target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href='https://twitter.com/ramelag2' target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href='https://wa.me/966552580070' target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div  class='LastfooterSec'>
+          <div  class='LeftLastFooterSec'>
+            <h5>الملف التعريفي للشركه -</h5>
+            <h5>بعض عملائنا -</h5>
+            <h5>سياسه الخصوصيه -</h5>
+            <h5>الشروط والاحكام -</h5>
+            <h5>خريطه الموقع الالكتروني  -</h5>
+          </div>
+          <div class='RightLastFooterSec' >
+            <div class='RightLastFooterSecimg'>
+            <img width="55px" height="76px" src="pics/ااخهنيخنشخ.png" />
+            </div>
+          </div>
+    
+          <div class='RightLastFooterSec' >
+            <div class='RightLastFooterSecdiv' >
+            <h4>العنوان</h4>
+            <span>الأحساء . الهفوف . يجوار البستان مول</span>
+            </div>
+            <div class='RightLastFooterSecdiv'>
+            <h4>الهاتف</h4>
+            <span>+966543216785</span>
+            <span>+966784321356</span>
+            </div>
+            <div class='RightLastFooterSecdiv'>
+            <h4>اوقات الدوام</h4>
+            <span>السبت الي الخميسمن 8 ص : 6م</span>
+            </div>
+          </div>
+    
+    
+    
+        </div>
+    </div>
+    <div>
+      <!-- &copy; A.Asker 2024 -->
+      <div class="Palestine">
+        <span>Free</span><span > </span><span>Palestine</span>
+
+      </div>
+    </div>
+    </footer>
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js" ></script>
+  </body>
+</html>

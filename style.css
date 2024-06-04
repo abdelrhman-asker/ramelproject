@@ -1,0 +1,702 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Noor;
+  src: url(fonts/AGCRegular.ttf);
+}
+@keyframes loader {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+  25% {
+    width: 25%;
+    background-color: orange;
+  }
+  50% {
+    width: 50%;
+    background-color: yellow;
+  }
+  75% {
+    width: 75%;
+    background-color: #07fc03;
+  }
+  100% {
+    width: 100%;
+    background-color: rgb(0, 255, 0);
+  }
+}
+* {
+  box-sizing: border-box;
+  font-family: Noor;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body .Main-Nav .SocialLinks a .fa-tiktok:hover, body .Main-Nav .SocialLinks a .fa-snapchat:hover, body .Main-Nav .SocialLinks a .fa-instagram:hover, body .Main-Nav .SocialLinks a .fa-twitter:hover, body .Main-Nav .SocialLinks a .fa-whatsapp:hover {
+  scale: 1.25;
+  transition: 0.3s;
+}
+
+body .my-element3, body .my-element2, body .my-element1 {
+  position: absolute;
+  text-align: center;
+}
+
+body .my-element3::before, body .my-element2::before, body .my-element1::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Noor;
+  font-size: 2em;
+}
+
+.loader {
+  min-width: 25vw;
+  max-width: 50vw;
+  background-color: gray;
+  height: 5px;
+  margin: auto;
+  position: relative;
+}
+
+.Into-Load {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(0, 255, 0);
+  animation: loader 4.2s linear;
+}
+
+::-webkit-scrollbar-button {
+  color: #f8c459;
+}
+
+body {
+  margin: 0;
+  background-color: #606060;
+  padding: 25px 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body .Main-Section {
+  display: none;
+}
+body .img-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  gap: 25px;
+  margin: auto;
+  overflow: hidden;
+  z-index: 2;
+}
+body .img-div img {
+  max-width: 100%;
+}
+body .fading-imgs img {
+  text-align: center;
+  max-width: 65%;
+  min-width: 25%;
+  min-height: 10%;
+}
+body .my-element1 {
+  top: -5vh;
+  right: -10vw;
+}
+body .my-element1::before {
+  content: "نسوي";
+}
+body .my-element2 {
+  bottom: -10vh;
+  right: 30vw;
+}
+body .my-element2::before {
+  content: "من الحبة";
+}
+body .my-element3 {
+  top: -5vh;
+  left: -10vw;
+}
+body .my-element3::before {
+  content: "قبة";
+}
+body .Main-Nav {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  min-width: 80%;
+  max-width: 95%;
+  margin: auto;
+}
+body .Main-Nav .MidLogo {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+body .Main-Nav .MidLogo img {
+  max-width: 70%;
+  min-width: 25%;
+  min-height: 10%;
+}
+body .Main-Nav .searchAText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body .Main-Nav .searchAText input {
+  border-radius: 5px;
+  outline: none;
+  padding: 1px;
+}
+body .Main-Nav .searchAText .InputWithIcon {
+  position: relative;
+}
+body .Main-Nav .searchAText .fa-magnifying-glass {
+  position: absolute;
+  color: black;
+  z-index: 6;
+  left: 0;
+  transform: translate(25%, 25%);
+}
+body .Main-Nav .SocialLinks {
+  color: rgba(255, 255, 255, 0.653) !important;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body .Main-Nav .SocialLinks .links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+body .Main-Nav .SocialLinks a {
+  color: rgba(255, 255, 255, 0.653);
+  font-size: 20px;
+}
+body .Main-Nav .SocialLinks a .fa-whatsapp:hover {
+  color: #075e54;
+}
+body .Main-Nav .SocialLinks a .fa-twitter:hover {
+  color: #1da1f2;
+}
+body .Main-Nav .SocialLinks a .fa-instagram:hover {
+  color: #e1306c;
+}
+body .Main-Nav .SocialLinks a .fa-snapchat:hover {
+  color: #fffc00;
+}
+body .Main-Nav .SocialLinks a .fa-tiktok:hover {
+  color: skyblue;
+}
+body .Main-Nav .sideBar {
+  display: none;
+}
+body .sidenav {
+  display: none;
+  min-width: 75vw;
+  max-width: 100vw;
+  padding-top: 10vh;
+  background-color: #606060;
+  box-shadow: 5px 10px 20px black;
+  position: absolute;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 991.98px) {
+  body .sidenav {
+    display: none !important;
+  }
+  body .NavContent {
+    position: relative !important;
+  }
+}
+@media (max-width: 991.98px) {
+  body .fading-imgs {
+    display: none;
+  }
+  body .main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -25px;
+  }
+  body .SocialLinks span {
+    display: none;
+  }
+  body .Main-Nav {
+    flex-direction: row-reverse;
+  }
+  body .Main-Nav .SocialLinks .links {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+  }
+  body .Main-Nav .SocialLinks .links a {
+    font-size: 15px;
+  }
+  body .Main-Nav .sideBar {
+    display: flex;
+  }
+  body .Main-Nav .searchAText {
+    display: none;
+  }
+}
+
+.dropdown-btn {
+  margin-bottom: 5px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  font-size: 16px;
+  padding: 6px 8px 6px 20px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-cont {
+  margin-bottom: 20px;
+}
+
+.dropdown-cont a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.756);
+}
+
+/* Main content */
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+/* Optional: Style the caret down icon */
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.BigFooter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 5px;
+  max-width: 90vw;
+  color: rgba(255, 255, 255, 0.653);
+}
+.BigFooter .WhiteLine {
+  width: 75vw;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.558);
+  position: relative;
+}
+.BigFooter .WhiteLine::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  left: 2%;
+  position: absolute;
+  background-color: #606060;
+}
+.BigFooter .WhiteLine::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  right: 2%;
+  position: absolute;
+  background-color: #606060;
+}
+.BigFooter .SocialLinksDiv {
+  flex-direction: column !important;
+  gap: 20px;
+}
+.BigFooter .SocialLinksDiv a {
+  background-color: gray;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px !important;
+}
+.BigFooter .LastfooterSec {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+.BigFooter .LastfooterSec .LeftLastFooterSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.BigFooter .LastfooterSec .LeftLastFooterSec h5 {
+  padding: 0;
+  margin: 0;
+}
+.BigFooter .LastfooterSec .RightLastFooterSec {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.BigFooter .LastfooterSec .RightLastFooterSec .RightLastFooterSecdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.BigFooter .LastfooterSec .RightLastFooterSec .RightLastFooterSecdiv h4 {
+  color: rgba(255, 255, 255, 0.478);
+}
+.BigFooter .Palestine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  width: 25vh;
+  height: 12vh;
+}
+.BigFooter .Palestine::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  border-left: 60px solid red;
+  border-top: 6vh solid transparent;
+  border-bottom: 6vh solid transparent;
+  border-radius: 10px;
+}
+.BigFooter .Palestine span:nth-child(2), .BigFooter .Palestine span {
+  width: 100%;
+  height: 4vh;
+}
+.BigFooter .Palestine span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BigFooter .Palestine span:first-child {
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+}
+.BigFooter .Palestine span:nth-child(2) {
+  background-color: white;
+}
+.BigFooter .Palestine span:nth-child(3) {
+  background-color: green;
+  border-radius: 0 0 10px 10px;
+}
+
+.Main-Content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100vw;
+}
+.Main-Content .Ourvision {
+  position: relative;
+  background-color: #379fcf;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25vh;
+  width: 100vw;
+  max-width: 80vw;
+  border-radius: 25px;
+  margin: auto;
+}
+.Main-Content .Ourvision div:nth-child(2) {
+  margin: auto;
+  height: 100%;
+}
+.Main-Content .Ourvision div:nth-child(2) img {
+  margin-left: auto;
+  height: 90%;
+  width: 90%;
+  scale: 3;
+  animation: robotAnimation 7s linear infinite;
+}
+.Main-Content .Ourvision div:nth-child(1) {
+  margin-right: auto;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-color: #eee;
+  height: 100%;
+  padding: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.Main-Content .Ourvision div:nth-child(1) h4 {
+  color: #5eb253;
+  font-size: 2vw;
+}
+.Main-Content .Ourvision div:nth-child(1) h6 {
+  color: #007eb9;
+  font-size: 1.5vw;
+  max-width: 70%;
+}
+
+@media screen and (max-width: 991px) {
+  .SocialLinksDiv a {
+    font-size: 12px !important;
+  }
+  .LastfooterSec {
+    font-size: 12px !important;
+  }
+  .Main-Imgs {
+    display: none !important;
+  }
+}
+@media (max-width: 585px) {
+  .Main-Content .Ourvision div:nth-child(2) img {
+    scale: 1.7;
+  }
+}
+@media (max-width: 481px) {
+  .Main-Content .Ourvision div:nth-child(2) img {
+    scale: 1.5;
+  }
+}
+@keyframes robotAnimation {
+  0% {
+    transform: translate(0, 0%);
+  }
+  50% {
+    transform: translate(0, -5%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.Main-Imgs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.MainSlogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 0.866);
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  gap: 10px;
+  margin: 50px;
+}
+.MainSlogan img {
+  max-width: 30px;
+}
+
+.FImgGreen {
+  transition: opacity 0.5s ease-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  cursor: context-menu;
+}
+
+.OpenOnHover {
+  display: none;
+  margin-top: -140px;
+  margin-left: -7px;
+  transition: opacity 0.5s ease-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.LinksOnhoverLDiv {
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.LinksOnhoverLinks {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+}
+
+.LinksOnhoverLinks:hover {
+  color: white;
+}
+
+.OpenOnHoverMain {
+  transition: opacity 0.5s ease-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+.OpenOnHoverMain h4 {
+  position: absolute;
+  top: 30%;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.OpenOnHover:hover {
+  display: block;
+}
+
+.FImgGreen:hover + .OpenOnHover {
+  display: block;
+}
+
+.FImgGreen h4 {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.ourClientsMainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10vh 0;
+  gap: 5vh;
+}
+.ourClientsMainDiv hr {
+  min-width: 40vw;
+  margin: auto;
+}
+.ourClientsMainDiv h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+.ourClientsMainDiv .MainClients {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 50px;
+  overflow-x: hidden;
+  padding: 20px;
+}
+.ourClientsMainDiv .MainClients .rowDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.ourClientsMainDiv .MainClients .rowDiv .clientsBack {
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .rowDiv {
+    width: 25vw;
+  }
+  .rowDiv .clientsImg {
+    max-width: 15vw;
+    max-height: 15vw;
+  }
+  .rowDiv .clientsBack {
+    width: 21vw;
+  }
+}
+.WhoWeAre {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f8c459;
+  padding: 50px;
+  margin-bottom: 50px;
+  width: 100vw !important;
+}
+.WhoWeAre .WhoWeAreRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  text-align: center;
+}
+.WhoWeAre .WhoWeAreRight h3 {
+  color: white;
+  text-shadow: 2px black;
+}
+.WhoWeAre .WhoWeAreRight h4 {
+  color: black;
+}
+.WhoWeAre .WhoWeAreRight .WhoWeAreRightLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.325);
+}
+.WhoWeAre .WhoWeAreRight .WhoWeAreRightLink a {
+  text-decoration: none;
+  color: white;
+}
+.WhoWeAre .WhoWeAreRight .WhoWeAreRightLink i {
+  color: green;
+}/*# sourceMappingURL=style.css.map */

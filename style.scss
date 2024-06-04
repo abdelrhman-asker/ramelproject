@@ -1,0 +1,708 @@
+@font-face {
+  font-family: Noor;
+  src: url(fonts/AGCRegular.ttf);
+}
+@keyframes loader {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+  25% {
+    width: 25%;
+    background-color: orange;
+  }
+  50% {
+    width: 50%;
+    background-color: yellow;
+  }
+  75% {
+    width: 75%;
+    background-color: #07fc03;
+  }
+  100% {
+    width: 100%;
+    background-color: rgb(0, 255, 0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Noor;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+$MainBackGround: #606060;
+%hoverLinks {
+  scale: 1.25;
+  transition: 0.3s;
+}
+%absCenter {
+  position: absolute;
+  text-align: center;
+}
+%beforestyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Noor;
+  font-size: 2em;
+}
+
+// loader animation
+.loader {
+  min-width: 25vw;
+  max-width: 50vw;
+  background-color: gray;
+  height: 5px;
+  margin: auto;
+  position: relative;
+}
+.Into-Load {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(0, 255, 0);
+  animation: loader 4.2s linear;
+}
+
+::-webkit-scrollbar-button {
+  color: #f8c459;
+}
+
+body {
+  margin: 0;
+  background-color: $MainBackGround;
+  padding: 25px 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  // first advertising page
+  .Main-Section {
+    display: none;
+  }
+  .img-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    gap: 25px;
+    margin: auto;
+    overflow: hidden;
+    z-index: 2;
+    img {
+      max-width: 100%;
+    }
+  }
+  .fading-imgs img {
+    text-align: center;
+    max-width: 65%;
+    min-width: 25%;
+    min-height: 10%;
+  }
+  .my-element1 {
+    @extend %absCenter;
+    top: -5vh;
+    right: -10vw;
+  }
+  .my-element1::before {
+    content: "نسوي";
+    @extend %beforestyle;
+  }
+  .my-element2 {
+    @extend %absCenter;
+    bottom: -10vh;
+    right: 30vw;
+  }
+  .my-element2::before {
+    content: "من الحبة";
+    @extend %beforestyle;
+  }
+  .my-element3 {
+    @extend %absCenter;
+    top: -5vh;
+    left: -10vw;
+  }
+  .my-element3::before {
+    content: "قبة";
+    @extend %beforestyle;
+  }
+  // NavBar Content
+  .Main-Nav {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    min-width: 80%;
+    max-width: 95%;
+    margin: auto;
+    .MidLogo {
+      width: 20%;
+      margin: auto;
+      text-align: center;
+      img {
+        max-width: 70%;
+        min-width: 25%;
+        min-height: 10%;
+      }
+    }
+    .searchAText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      input {
+        border-radius: 5px;
+        outline: none;
+        padding: 1px;
+      }
+      .InputWithIcon {
+        position: relative;
+      }
+      .fa-magnifying-glass {
+        position: absolute;
+        color: black;
+        z-index: 6;
+        left: 0;
+        transform: translate(25%, 25%);
+      }
+    }
+    .SocialLinks {
+      color: rgba(255, 255, 255, 0.653) !important;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      a {
+        color: rgba(255, 255, 255, 0.653);
+        font-size: 20px;
+
+        .fa-whatsapp:hover {
+          color: #075e54;
+          @extend %hoverLinks;
+        }
+        .fa-twitter:hover {
+          color: #1da1f2;
+          @extend %hoverLinks;
+        }
+        .fa-instagram:hover {
+          color: #e1306c;
+          @extend %hoverLinks;
+        }
+        .fa-snapchat:hover {
+          color: #fffc00;
+          @extend %hoverLinks;
+        }
+        .fa-tiktok:hover {
+          color: skyblue;
+          @extend %hoverLinks;
+        }
+      }
+    }
+    .sideBar {
+      display: none;
+    }
+  }
+  .sidenav {
+    display: none;
+    min-width: 75vw;
+    max-width: 100vw;
+    padding-top: 10vh;
+    background-color: $MainBackGround;
+    box-shadow: 5px 10px 20px black;
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media (min-width: 991.98px) {
+    .sidenav {
+      display: none !important;
+    }
+    .NavContent {
+      position: relative !important;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .fading-imgs {
+      display: none;
+    }
+
+    .main-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: -25px;
+    }
+    .SocialLinks span {
+      display: none;
+    }
+    .Main-Nav {
+      flex-direction: row-reverse;
+      .SocialLinks .links {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        a {
+          font-size: 15px;
+        }
+      }
+      .sideBar {
+        display: flex;
+      }
+    }
+    .Main-Nav .searchAText {
+      display: none;
+    }
+  }
+}
+.dropdown-btn {
+  margin-bottom: 5px;
+}
+.sidenav a,
+.dropdown-btn {
+  font-size: 16px;
+  padding: 6px 8px 6px 20px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dropdown-cont {
+  margin-bottom: 20px;
+}
+.dropdown-cont a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.756);
+}
+/* Main content */
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+/* Optional: Style the caret down icon */
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+// End of Fucing NAv
+
+// start Footer
+.BigFooter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 5px;
+  max-width: 90vw;
+  color: rgba(255, 255, 255, 0.653);
+  .WhiteLine {
+    width: 75vw;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.558);
+    position: relative;
+  }
+  .WhiteLine::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    left: 2%;
+    position: absolute;
+    background-color: $MainBackGround;
+  }
+  .WhiteLine::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    right: 2%;
+    position: absolute;
+    background-color: $MainBackGround;
+  }
+  .SocialLinksDiv {
+    flex-direction: column !important;
+    gap: 20px;
+    a {
+      background-color: gray;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 15px !important;
+    }
+  }
+  .LastfooterSec {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    .LeftLastFooterSec {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      gap: 25px;
+      width: fit-content;
+      h5 {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .RightLastFooterSec {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      .RightLastFooterSecdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        h4 {
+          color: rgba(255, 255, 255, 0.478);
+        }
+      }
+    }
+  }
+  .Palestine {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    width: 25vh;
+    height: 12vh;
+  }
+  .Palestine::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    border-left: 60px solid red;
+    border-top: 6vh solid transparent;
+    border-bottom: 6vh solid transparent;
+    border-radius: 10px;
+  }
+  %spanPala {
+    width: 100%;
+    height: calc(12vh / 3);
+  }
+  .Palestine span {
+    @extend %spanPala;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Palestine span:first-child {
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+  }
+  .Palestine span:nth-child(2) {
+    @extend %spanPala;
+    background-color: white;
+  }
+  .Palestine span:nth-child(3) {
+    background-color: green;
+    border-radius: 0 0 10px 10px;
+  }
+}
+// End Footer
+
+// Main-Content
+.Main-Content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100vw;
+  .Ourvision {
+    position: relative;
+    background-color: #379fcf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+    width: 100vw;
+    max-width: 80vw;
+    border-radius: 25px;
+    margin: auto;
+    div:nth-child(2) {
+      margin: auto;
+      height: 100%;
+      img {
+        margin-left: auto;
+        height: 90%;
+        width: 90%;
+
+        scale: 3;
+        animation: robotAnimation 7s linear infinite;
+      }
+    }
+    div:nth-child(1) {
+      margin-right: auto;
+      margin-left: 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      background-color: #eee;
+      height: 100%;
+      padding: 30px;
+      width: fit-content;
+      text-align: center;
+      h4 {
+        color: #5eb253;
+        font-size: 2vw;
+      }
+      h6 {
+        color: #007eb9;
+        font-size: 1.5vw;
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .SocialLinksDiv {
+    a {
+      font-size: 12px !important;
+    }
+  }
+  .LastfooterSec {
+    font-size: 12px !important;
+  }
+  .Main-Imgs {
+    display: none !important;
+  }
+}
+@media (max-width: 585px) {
+  .Main-Content .Ourvision div:nth-child(2) img {
+    scale: 1.7;
+  }
+}
+@media (max-width: 481px) {
+  .Main-Content .Ourvision div:nth-child(2) img {
+    scale: 1.5;
+  }
+}
+
+@keyframes robotAnimation {
+  0% {
+    transform: translate(0, 0%);
+  }
+  50% {
+    transform: translate(0, -5%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.Main-Imgs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.MainSlogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 0.866);
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  gap: 10px;
+  margin: 50px;
+  img {
+    max-width: 30px;
+  }
+}
+.FImgGreen {
+  transition: opacity 0.5s ease-out;
+  width: fit-content;
+  position: relative;
+  cursor: context-menu;
+}
+.OpenOnHover {
+  display: none;
+  margin-top: -140px;
+  margin-left: -7px;
+  transition: opacity 0.5s ease-out;
+  width: fit-content;
+  position: relative;
+}
+.LinksOnhoverLDiv {
+  top: 50%;
+  left: 0%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.LinksOnhoverLinks {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+
+  width: 100%;
+}
+.LinksOnhoverLinks:hover {
+  color: white;
+}
+.OpenOnHoverMain {
+  transition: opacity 0.5s ease-out;
+  width: fit-content;
+  position: relative;
+}
+
+.OpenOnHoverMain h4 {
+  position: absolute;
+  top: 30%;
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.OpenOnHover:hover {
+  display: block;
+}
+.FImgGreen:hover + .OpenOnHover {
+  display: block;
+}
+.FImgGreen h4 {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+.ourClientsMainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10vh 0;
+  gap: 5vh;
+  hr {
+    min-width: 40vw;
+    margin: auto;
+  }
+  h3 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  .MainClients {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    row-gap: 50px;
+    overflow-x: hidden;
+    padding: 20px;
+    .rowDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .clientsBack {
+        position: absolute;
+        z-index: -1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .rowDiv {
+    width: 25vw;
+    .clientsImg {
+      max-width: 15vw;
+      max-height: 15vw;
+    }
+    .clientsBack {
+      width: 21vw;
+    }
+  }
+}
+.WhoWeAre {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f8c459;
+  padding: 50px;
+  margin-bottom: 50px;
+  width: 100vw !important;
+  .WhoWeAreRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+    h3 {
+      color: white;
+      text-shadow: 2px black;
+    }
+    h4 {
+      color: black;
+    }
+    .WhoWeAreRightLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.325);
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      i {
+        color: green;
+      }
+    }
+  }
+}
