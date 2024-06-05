@@ -2,32 +2,32 @@
   "clients": [
     {
       "id": "1",
-      "img": "pics/clients/planet.png",
+      "img": "pics/clients/planet.WEBP",
       "name": "planet"
     },
     {
       "id": "2",
-      "img": "pics/clients/ayafashion.png",
+      "img": "pics/clients/ayafashion.WEBP",
       "name": "ayafashion"
     },
     {
       "id": "3",
-      "img": "pics/clients/taks.png",
+      "img": "pics/clients/taks.WEBP",
       "name": "taks"
     },
     {
       "id": "4",
-      "img": "pics/clients/darengineers.png",
+      "img": "pics/clients/darengineers.WEBP",
       "name": "darengineers"
     },
     {
       "id": "5",
-      "img": "pics/clients/bukhmaseen.png",
+      "img": "pics/clients/bukhmaseen.WEBP",
       "name": "bukhmaseen"
     },
     {
       "id": "6",
-      "img": "pics/clients/darbasma.png",
+      "img": "pics/clients/darbasma.WEBP",
       "name": "darbasma"
     }
   ]

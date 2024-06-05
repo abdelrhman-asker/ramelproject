@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         row.classList.add("rowDiv");
         row.innerHTML = `
                   <img class="clientsImg" src="${item.img}" alt="clientimg" >
-                  <img class="clientsBack" src="pics/clients/Rectangle 24.png" alt="background">
+                  <img class="clientsBack" src="pics/clients/Rectangle 24.WEBP" alt="background">
 
                
               `;

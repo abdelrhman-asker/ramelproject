@@ -91,10 +91,9 @@ body .Main-Section {
   display: none;
 }
 body .img-div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 25%;
+  display: grid;
+  min-width: 25%;
+  max-width: 35%;
   gap: 25px;
   margin: auto;
   overflow: hidden;
@@ -358,6 +357,9 @@ body .sidenav {
   border-radius: 5px;
   font-size: 15px !important;
 }
+.BigFooter .SocialLinksDiv .LinksFooter {
+  justify-content: center !important;
+}
 .BigFooter .LastfooterSec {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -368,6 +370,7 @@ body .sidenav {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  text-align: end;
   gap: 25px;
   width: -moz-fit-content;
   width: fit-content;
@@ -386,8 +389,10 @@ body .sidenav {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  text-align: end;
 }
 .BigFooter .LastfooterSec .RightLastFooterSec .RightLastFooterSecdiv h4 {
+  padding: 10px 0;
   color: rgba(255, 255, 255, 0.478);
 }
 .BigFooter .Palestine {
@@ -686,7 +691,7 @@ body .sidenav {
   align-items: center;
   flex-direction: row;
   background-color: #f8c459;
-  padding: 50px;
+  padding: 50px 30px;
   margin-bottom: 50px;
   width: 100vw !important;
 }
@@ -696,7 +701,7 @@ body .sidenav {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  width: 50%;
+  max-width: 50%;
   text-align: center;
 }
 .WhoWeAre .WhoWeAreRight h3 {
@@ -721,4 +726,16 @@ body .sidenav {
 }
 .WhoWeAre .WhoWeAreRight .WhoWeAreRightLink i {
   color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .WhoWeAreRight h3 {
+    font-size: 16px;
+  }
+  .WhoWeAreRight h4 {
+    font-size: 12px;
+  }
+  .WhoWeAreRight .WhoWeAreRightLink {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

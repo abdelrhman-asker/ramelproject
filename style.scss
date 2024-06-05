@@ -88,10 +88,9 @@ body {
     display: none;
   }
   .img-div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 25%;
+    display: grid;
+    min-width: 25%;
+    max-width: 35%;
     gap: 25px;
     margin: auto;
     overflow: hidden;
@@ -371,6 +370,9 @@ body {
       border-radius: 5px;
       font-size: 15px !important;
     }
+    .LinksFooter {
+      justify-content: center !important;
+    }
   }
   .LastfooterSec {
     display: grid;
@@ -381,6 +383,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: end;
+      text-align: end;
       gap: 25px;
       width: fit-content;
       h5 {
@@ -397,7 +400,9 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: end;
+        text-align: end;
         h4 {
+          padding: 10px 0;
           color: rgba(255, 255, 255, 0.478);
         }
       }
@@ -692,7 +697,7 @@ body {
   align-items: center;
   flex-direction: row;
   background-color: #f8c459;
-  padding: 50px;
+  padding: 50px 30px;
   margin-bottom: 50px;
   width: 100vw !important;
   .WhoWeAreRight {
@@ -701,7 +706,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    max-width: 50%;
     text-align: center;
     h3 {
       color: white;
@@ -725,6 +730,19 @@ body {
       i {
         color: green;
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .WhoWeAreRight {
+    h3 {
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 12px;
+    }
+    .WhoWeAreRightLink {
+      font-size: 14px;
     }
   }
 }
