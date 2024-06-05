@@ -5,7 +5,8 @@ setTimeout(function () {
   loader.style.display = "none";
   let MainSection = document.getElementById("Main-Section");
   MainSection.style.display = "block";
-}, 5000);
+}, 4500);
+
 function openingSideBar() {
   document.getElementById("sidenav").style.display = "flex";
   document.getElementById("ClosingAll").style.display = "block";
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.error("There was a problem with the fetch operation:", error);
     });
 });
+
 {
   /* <td>${item.age}</td>
 <td>${item.email}</td> */
