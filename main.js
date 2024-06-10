@@ -5,7 +5,7 @@ setTimeout(function () {
   loader.style.display = "none";
   let MainSection = document.getElementById("Main-Section");
   MainSection.style.display = "block";
-}, 4500);
+}, 5000);
 
 function openingSideBar() {
   document.getElementById("sidenav").style.display = "flex";
